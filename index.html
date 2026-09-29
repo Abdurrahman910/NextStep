@@ -1,0 +1,788 @@
+# NextStep
+Next Step to your carrier
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextStep - Your Career Starts Here | Jasa Buat CV Profesional</title>
+    <meta name="description" content="NextStep adalah layanan persiapan karier untuk fresh graduate dan entry-level job seeker. Dapatkan CV profesional, informasi lowongan kerja, dan networking.">
+    <meta name="keywords" content="jasa buat CV, CV profesional, CV fresh graduate, jasa CV murah, CV ATS, lowongan kerja, info loker, lowongan kerja daerah, komunitas pencari kerja">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: '#0A1F44',
+                        electric: '#0052FF',
+                        lightgray: '#F8F9FA',
+                        darkgray: '#4A5568'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FFFFFF; }
+        html { scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #0A1F44 0%, #0052FF 100%); }
+        .text-gradient { background: linear-gradient(90deg, #0052FF 0%, #00C2FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 82, 255, 0.1), 0 10px 10px -5px rgba(0, 82, 255, 0.04); }
+        .step-hidden { display: none; }
+        .input-focus:focus { border-color: #0052FF; box-shadow: 0 0 0 3px rgba(0, 82, 255, 0.1); outline: none; }
+        .pulse-whatsapp { animation: pulse-wa 2s infinite; }
+        @keyframes pulse-wa { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+    </style>
+</head>
+<body class="bg-white text-darkgray">
+
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-40 shadow-sm border-b border-gray-100">
+        <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center gap-2">
+                <img src="https://z-cdn-media.chatglm.cn/files/c4ff2520-409a-4c15-aef5-5f2c549a7779.png?auth_key=1890692637-c34048918e8945d7ba8461a0e8c9f89c-0-e9f398c9f763354ccb998cf1b072704f" alt="NextStep Logo" class="h-10 w-10 rounded-full object-cover">
+                <div class="flex flex-col leading-none">
+                    <span class="text-xl font-extrabold text-navy">Next<span class="text-electric">Step</span></span>
+                    <span class="text-[10px] text-gray-400 tracking-wider">YOUR CAREER STARTS HERE</span>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm">
+                <a href="#layanan" class="text-gray-600 hover:text-electric transition">Layanan</a>
+                <a href="#cara-kerja" class="text-gray-600 hover:text-electric transition">Cara Kerja</a>
+                <a href="#faq" class="text-gray-600 hover:text-electric transition">FAQ</a>
+            </div>
+            <a href="https://wa.me/6283834654716?text=Halo%20NextStep,%20saya%20ingin%20bertanya%20mengenai%20layanan%20NextStep." target="_blank" class="bg-electric text-white px-4 py-2 rounded-lg font-semibold text-sm hover:bg-blue-700 transition flex items-center gap-2">
+                <i class="fab fa-whatsapp"></i> Chat Admin
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main View -->
+    <div id="main-view">
+        <!-- Hero Section -->
+        <section id="home" class="bg-lightgray overflow-hidden">
+            <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 flex flex-col-reverse md:flex-row items-center gap-8">
+                <div class="flex-1 text-center md:text-left">
+                    <h1 class="text-3xl md:text-5xl font-extrabold text-navy leading-tight mb-4">
+                        Mulai Langkah Pertamamu Menuju <span class="text-gradient">Karier yang Lebih Baik.</span>
+                    </h1>
+                    <p class="text-base md:text-lg text-gray-600 mb-8 max-w-xl mx-auto md:mx-0">
+                        Bantu persiapkan CV yang lebih profesional dan dapatkan akses informasi lowongan kerja yang relevan dengan kebutuhanmu.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#layanan" class="bg-electric text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition text-center">
+                            Pilih Layanan
+                        </a>
+                        <a href="https://wa.me/6283834654716?text=Halo%20NextStep,%20saya%20ingin%20bertanya%20mengenai%20layanan%20NextStep." target="_blank" class="bg-white text-navy border-2 border-gray-200 px-8 py-4 rounded-xl font-bold hover:border-electric hover:text-electric transition text-center">
+                            Chat WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-1 flex justify-center mb-8 md:mb-0">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-electric opacity-10 rounded-full blur-3xl"></div>
+                        <img src="https://z-cdn-media.chatglm.cn/files/c4ff2520-409a-4c15-aef5-5f2c549a7779.png?auth_key=1890692637-c34048918e8945d7ba8461a0e8c9f89c-0-e9f398c9f763354ccb998cf1b072704f" alt="NextStep Career" class="relative w-48 md:w-64 h-auto rounded-3xl shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kenapa NextStep -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-2xl md:text-4xl font-extrabold text-navy mb-2">Kenapa NextStep?</h2>
+                    <p class="text-gray-500">Kami fokus membantu fresh graduate dan entry-level siap kerja.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-lightgray p-6 rounded-2xl card-hover">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 text-electric text-xl">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 class="font-bold text-navy text-lg mb-2">CV Lebih Profesional</h3>
+                        <p class="text-sm text-gray-600">Susunan CV rapi, bersih, dan disesuaikan dengan standar HRD modern.</p>
+                    </div>
+                    <div class="bg-lightgray p-6 rounded-2xl card-hover">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 text-electric text-xl">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="font-bold text-navy text-lg mb-2">Sesuai Kebutuhan Posisi</h3>
+                        <p class="text-sm text-gray-600">CV tidak generik. Kami bantu arahkan sesuai target posisi yang kamu inginkan.</p>
+                    </div>
+                    <div class="bg-lightgray p-6 rounded-2xl card-hover">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 text-electric text-xl">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 class="font-bold text-navy text-lg mb-2">Info Loker Berdasarkan Wilayah</h3>
+                        <p class="text-sm text-gray-600">Dapatkan update lowongan kerja yang relevan dengan lokasi tempat tinggalmu.</p>
+                    </div>
+                    <div class="bg-lightgray p-6 rounded-2xl card-hover">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 text-electric text-xl">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="font-bold text-navy text-lg mb-2">Networking Job Seeker</h3>
+                        <p class="text-sm text-gray-600">Terhubung dengan komunitas sesama pencari kerja untuk berbagi informasi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Produk -->
+        <section id="layanan" class="py-16 md:py-24 bg-lightgray">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-2xl md:text-4xl font-extrabold text-navy mb-2">Pilih Layananmu</h2>
+                    <p class="text-gray-500">Sederhanakan proses pencarian kerjamu dari sekarang.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+                    
+                    <!-- CV Level 1 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col">
+                        <h3 class="text-xl font-bold text-navy">CV Level 1</h3>
+                        <p class="text-sm text-gray-500 mb-4">Untuk kebutuhan umum & entry-level</p>
+                        <div class="flex items-baseline gap-1 mb-6">
+                            <span class="text-3xl font-extrabold text-navy">Rp25.000</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4">Cocok untuk posisi admin, sales, customer service, operator, store staff, marketing, warehouse, technician.</p>
+                        <ul class="space-y-3 text-sm text-gray-600 mb-8 flex-grow">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-electric"></i> Desain CV profesional standar</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-electric"></i> Rapih dan mudah dibaca HRD</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-electric"></i> Cocok untuk fresh graduate</li>
+                        </ul>
+                        <button onclick="startOrder('cv1')" class="w-full bg-white text-electric border-2 border-electric py-3 rounded-xl font-bold hover:bg-electric hover:text-white transition">
+                            Pesan CV Level 1
+                        </button>
+                    </div>
+
+                    <!-- CV Level 2 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl border-2 border-electric flex flex-col relative md:-mt-4 md:mb-4">
+                        <span class="absolute top-0 right-0 bg-electric text-white text-xs font-bold px-4 py-1 rounded-bl-xl rounded-tr-2xl">Rekomendasi</span>
+                        <h3 class="text-xl font-bold text-navy">CV Level 2</h3>
+                        <p class="text-sm text-gray-500 mb-4">Lebih terarah & disesuaikan</p>
+                        <div class="flex items-baseline gap-1 mb-6">
+                            <span class="text-3xl font-extrabold text-navy">Rp45.000</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4">Cocok untuk posisi kompetitif, perusahaan besar, Management Trainee, corporate.</p>
+                        <ul class="space-y-3 text-sm text-gray-600 mb-8 flex-grow">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-electric"></i> Penyesuaian CV lebih detail</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-electric"></i> Ditargetkan ke perusahaan/posisi</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-electric"></i> Highlight pengalaman yang relevan</li>
+                        </ul>
+                        <button onclick="startOrder('cv2')" class="w-full bg-electric text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition">
+                            Pesan CV Level 2
+                        </button>
+                    </div>
+
+                    <!-- Job Hunter -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col">
+                        <h3 class="text-xl font-bold text-navy">Job Hunter</h3>
+                        <p class="text-sm text-gray-500 mb-4">Akses info & networking</p>
+                        <div class="flex items-baseline gap-1 mb-6">
+                            <span class="text-3xl font-extrabold text-navy">Rp100.000</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4">Akses komunitas dan informasi lowongan kerja berdasarkan wilayah + networking antar job seeker.</p>
+                        <ul class="space-y-3 text-sm text-gray-600 mb-4 flex-grow">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-electric"></i> Update info lowongan kerja area</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-electric"></i> Grup networking job seeker</li>
+                        </ul>
+                        <p class="text-xs text-red-500 bg-red-50 p-3 rounded-lg mb-6">*Tidak termasuk jaminan mendapatkan pekerjaan.</p>
+                        <button onclick="startOrder('jh')" class="w-full bg-white text-electric border-2 border-electric py-3 rounded-xl font-bold hover:bg-electric hover:text-white transition">
+                            Daftar Job Hunter
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cara Kerja -->
+        <section id="cara-kerja" class="py-16 md:py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-2xl md:text-4xl font-extrabold text-navy mb-2">Cara Kerja NextStep</h2>
+                    <p class="text-gray-500">Proses yang simpel, transparan, dan cepat.</p>
+                </div>
+                <div class="space-y-8 relative">
+                    <div class="absolute left-4 md:left-1/2 top-0 h-full w-0.5 bg-gray-200 transform -translate-x-1/2"></div>
+                    
+                        <div class="relative flex items-center w-full">
+                            <div class="hidden md:block w-1/2 pr-8 text-right">
+                                <h4 class="font-bold text-navy">1. Pilih Layanan</h4>
+                                <p class="text-sm text-gray-500">Pilih paket CV atau Job Hunter sesuai kebutuhanmu.</p>
+                            </div>
+                            <div class="w-8 h-8 bg-electric rounded-full z-10 flex items-center justify-center text-white font-bold text-xs mx-auto">1</div>
+                            <div class="md:hidden w-full pl-6">
+                                <h4 class="font-bold text-navy">1. Pilih Layanan</h4>
+                                <p class="text-sm text-gray-500">Pilih paket CV atau Job Hunter sesuai kebutuhanmu.</p>
+                            </div>
+                            <div class="hidden md:block w-1/2 pl-8"></div>
+                        </div>
+
+                        <div class="relative flex items-center w-full">
+                            <div class="hidden md:block w-1/2"></div>
+                            <div class="w-8 h-8 bg-electric rounded-full z-10 flex items-center justify-center text-white font-bold text-xs mx-auto">2</div>
+                            <div class="hidden md:block w-1/2 pl-8">
+                                <h4 class="font-bold text-navy">2. Isi Data & Bayar</h4>
+                                <p class="text-sm text-gray-500">Lengkapi data diri, lalu bayar via QRIS atau SeaBank.</p>
+                            </div>
+                            <div class="md:hidden w-full pl-6">
+                                <h4 class="font-bold text-navy">2. Isi Data & Bayar</h4>
+                                <p class="text-sm text-gray-500">Lengkapi data diri, lalu bayar via QRIS atau SeaBank.</p>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-center w-full">
+                            <div class="hidden md:block w-1/2 pr-8 text-right">
+                                <h4 class="font-bold text-navy">3. Kirim Bukti Bayar</h4>
+                                <p class="text-sm text-gray-500">Klik tombol WhatsApp dan kirim bukti pembayaranmu.</p>
+                            </div>
+                            <div class="w-8 h-8 bg-electric rounded-full z-10 flex items-center justify-center text-white font-bold text-xs mx-auto">3</div>
+                            <div class="md:hidden w-full pl-6">
+                                <h4 class="font-bold text-navy">3. Kirim Bukti Bayar</h4>
+                                <p class="text-sm text-gray-500">Klik tombol WhatsApp dan kirim bukti pembayaranmu.</p>
+                            </div>
+                            <div class="hidden md:block w-1/2 pl-8"></div>
+                        </div>
+
+                        <div class="relative flex items-center w-full">
+                            <div class="hidden md:block w-1/2"></div>
+                            <div class="w-8 h-8 bg-electric rounded-full z-10 flex items-center justify-center text-white font-bold text-xs mx-auto">4</div>
+                            <div class="hidden md:block w-1/2 pl-8">
+                                <h4 class="font-bold text-navy">4. Admin Proses Pesanan</h4>
+                                <p class="text-sm text-gray-500">Admin verifikasi, menghubungimu, dan pesanan diproses!</p>
+                            </div>
+                            <div class="md:hidden w-full pl-6">
+                                <h4 class="font-bold text-navy">4. Admin Proses Pesanan</h4>
+                                <p class="text-sm text-gray-500">Admin verifikasi, menghubungimu, dan pesanan diproses!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="py-16 md:py-24 bg-lightgray">
+            <div class="max-w-3xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-2xl md:text-4xl font-extrabold text-navy mb-2">FAQ</h2>
+                    <p class="text-gray-500">Pertanyaan yang sering ditanyakan.</p>
+                </div>
+                <div class="space-y-4" id="faq-container">
+                    <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-5 text-left font-semibold text-navy" onclick="toggleFaq(this)">
+                            <span>Apakah NextStep menjamin saya mendapatkan pekerjaan?</span>
+                            <i class="fas fa-chevron-down text-electric transition-transform"></i>
+                        </button>
+                        <div class="hidden p-5 pt-0 text-gray-600 text-sm">
+                            Tidak. NextStep membantu kamu mempersiapkan CV dan mendapatkan akses informasi serta networking lowongan kerja. Keputusan penerimaan tetap berada pada perusahaan yang melakukan rekrutmen.
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-5 text-left font-semibold text-navy" onclick="toggleFaq(this)">
+                            <span>Apakah saya akan dihubungi admin?</span>
+                            <i class="fas fa-chevron-down text-electric transition-transform"></i>
+                        </button>
+                        <div class="hidden p-5 pt-0 text-gray-600 text-sm">
+                            Ya. Nomor WhatsApp digunakan agar admin dapat menghubungi dan memproses pesanan kamu.
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-5 text-left font-semibold text-navy" onclick="toggleFaq(this)">
+                            <span>Bagaimana cara pembayaran?</span>
+                            <i class="fas fa-chevron-down text-electric transition-transform"></i>
+                        </button>
+                        <div class="hidden p-5 pt-0 text-gray-600 text-sm">
+                            Pembayaran tersedia melalui QRIS dan transfer SeaBank.
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-5 text-left font-semibold text-navy" onclick="toggleFaq(this)">
+                            <span>Bagaimana cara mengirim bukti pembayaran?</span>
+                            <i class="fas fa-chevron-down text-electric transition-transform"></i>
+                        </button>
+                        <div class="hidden p-5 pt-0 text-gray-600 text-sm">
+                            Setelah pembayaran, klik tombol WhatsApp dan kirim bukti pembayaran kepada admin.
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-5 text-left font-semibold text-navy" onclick="toggleFaq(this)">
+                            <span>Apakah data saya aman?</span>
+                            <i class="fas fa-chevron-down text-electric transition-transform"></i>
+                        </button>
+                        <div class="hidden p-5 pt-0 text-gray-600 text-sm">
+                            Data yang diberikan digunakan untuk kebutuhan pemrosesan pesanan dan komunikasi layanan NextStep. Jangan tampilkan data pelanggan kepada publik.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Checkout View -->
+    <div id="checkout-view" class="hidden min-h-screen bg-lightgray py-10">
+        <div class="max-w-2xl mx-auto px-4">
+            <!-- Progress Bar -->
+            <div class="flex justify-between mb-10 relative">
+                <div class="absolute top-4 left-0 w-full h-1 bg-gray-200 rounded">
+                    <div id="progress-bar" class="h-full bg-electric rounded transition-all duration-500" style="width: 0%"></div>
+                </div>
+                <div class="w-full flex flex-col items-center z-10">
+                    <div class="w-8 h-8 bg-electric text-white rounded-full flex items-center justify-center text-xs font-bold">1</div>
+                    <span class="text-[10px] mt-1 font-semibold text-navy">Data</span>
+                </div>
+                <div class="w-full flex flex-col items-center z-10">
+                    <div id="step-2-circle" class="w-8 h-8 bg-gray-300 text-white rounded-full flex items-center justify-center text-xs font-bold">2</div>
+                    <span class="text-[10px] mt-1 font-semibold text-gray-400">Review</span>
+                </div>
+                <div class="w-full flex flex-col items-center z-10">
+                    <div id="step-3-circle" class="w-8 h-8 bg-gray-300 text-white rounded-full flex items-center justify-center text-xs font-bold">3</div>
+                    <span class="text-[10px] mt-1 font-semibold text-gray-400">Bayar</span>
+                </div>
+                <div class="w-full flex flex-col items-center z-10">
+                    <div id="step-4-circle" class="w-8 h-8 bg-gray-300 text-white rounded-full flex items-center justify-center text-xs font-bold">4</div>
+                    <span class="text-[10px] mt-1 font-semibold text-gray-400">Selesai</span>
+                </div>
+            </div>
+
+            <!-- Step 1: Form Data -->
+            <div id="form-step" class="step-hidden">
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm">
+                    <h2 class="text-2xl font-bold text-navy mb-1">Isi Data Pesanan</h2>
+                    <p class="text-gray-500 mb-6 text-sm">Lengkapi data di bawah ini dengan benar.</p>
+                    
+                    <form id="order-form" class="space-y-5" onsubmit="submitForm(event)">
+                        <div>
+                            <label class="block text-sm font-semibold text-navy mb-1">Nama Lengkap <span class="text-red-500">*</span></label>
+                            <input type="text" name="nama" required class="w-full p-3 border border-gray-200 rounded-lg input-focus text-sm" placeholder="Masukkan nama lengkap sesuai identitas.">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-navy mb-1">Nomor WhatsApp <span class="text-red-500">*</span></label>
+                            <input type="tel" name="wa" required pattern="[0-9]{10,15}" class="w-full p-3 border border-gray-200 rounded-lg input-focus text-sm" placeholder="Pastikan nomor aktif (contoh: 0812xxxxxxx).">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-navy mb-1">Alamat Lengkap <span class="text-red-500">*</span></label>
+                            <textarea name="alamat" required rows="2" class="w-full p-3 border border-gray-200 rounded-lg input-focus text-sm" placeholder="Masukkan alamat lengkap."></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-navy mb-1">Email <span class="text-gray-400 text-xs font-normal">(Opsional)</span></label>
+                            <input type="email" name="email" class="w-full p-3 border border-gray-200 rounded-lg input-focus text-sm" placeholder="email@example.com">
+                        </div>
+
+                        <div class="border-t border-gray-100 pt-5">
+                            <p class="font-bold text-navy mb-3 text-sm">Data Tambahan untuk <span id="product-name-label" class="text-electric"></span></p>
+                            <div id="dynamic-fields" class="space-y-5"></div>
+                        </div>
+
+                        <button type="submit" class="w-full bg-electric text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition mt-6">
+                            Lanjut ke Review
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Step 2: Review Data -->
+            <div id="review-step" class="step-hidden">
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm">
+                    <h2 class="text-2xl font-bold text-navy mb-1">Periksa Pesanan Kamu</h2>
+                    <p class="text-gray-500 mb-6 text-sm">Pastikan data di bawah ini sudah benar sebelum memilih pembayaran.</p>
+                    
+                    <div class="bg-lightgray p-4 rounded-xl space-y-3 mb-6 text-sm" id="review-summary"></div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <button onclick="goToStep(1)" class="sm:w-1/3 bg-white border-2 border-gray-200 text-gray-600 py-3 rounded-xl font-bold hover:border-gray-300 transition">
+                            Kembali Edit Data
+                        </button>
+                        <button onclick="goToStep(3)" class="sm:flex-1 bg-electric text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition">
+                            Lanjut ke Pembayaran
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Payment -->
+            <div id="payment-step" class="step-hidden">
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm">
+                    <h2 class="text-2xl font-bold text-navy mb-1">Pembayaran</h2>
+                    <p class="text-gray-500 mb-6 text-sm">Pilih salah satu metode pembayaran di bawah ini.</p>
+                    
+                    <div class="space-y-4 mb-6">
+                        <button onclick="selectPayment('qris')" id="btn-qris" class="w-full p-4 border-2 border-gray-200 rounded-xl flex items-center justify-between hover:border-electric transition text-left">
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-qrcode text-2xl text-electric"></i>
+                                <div>
+                                    <p class="font-bold text-navy">OPTION 1 — QRIS</p>
+                                    <p class="text-xs text-gray-500">Scan menggunakan aplikasi pembayaran</p>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-right text-gray-400"></i>
+                        </button>
+                        <button onclick="selectPayment('seabank')" id="btn-seabank" class="w-full p-4 border-2 border-gray-200 rounded-xl flex items-center justify-between hover:border-electric transition text-left">
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-university text-2xl text-electric"></i>
+                                <div>
+                                    <p class="font-bold text-navy">OPTION 2 — SeaBank</p>
+                                    <p class="text-xs text-gray-500">Transfer manual ke rekening admin</p>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-right text-gray-400"></i>
+                        </button>
+                    </div>
+
+                    <!-- QRIS Detail -->
+                    <div id="payment-detail-qris" class="step-hidden border-t border-gray-100 pt-6 text-center">
+                        <h3 class="font-bold text-navy text-lg mb-4">Bayar dengan QRIS</h3>
+                        <!-- Placeholder QRIS, bisa diganti admin -->
+                        <div class="w-56 h-56 mx-auto bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl flex items-center justify-center text-gray-400 font-bold mb-4">
+                            [QRIS NEXTSTEP]
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4">Scan QRIS menggunakan aplikasi pembayaran pilihanmu.</p>
+                        <div class="text-left bg-lightgray p-4 rounded-xl mb-6">
+                            <ol class="list-decimal text-xs text-gray-600 space-y-1 ml-5">
+                                <li>Scan QRIS</li>
+                                <li>Pastikan nama merchant sesuai</li>
+                                <li>Pastikan nominal pembayaran sesuai</li>
+                                <li>Selesaikan pembayaran</li>
+                                <li>Kirim bukti pembayaran melalui WhatsApp</li>
+                            </ol>
+                        </div>
+                        <button onclick="goToStep(4, 'QRIS')" class="w-full bg-navy text-white py-3 rounded-xl font-bold hover:bg-blue-900 transition">
+                            Saya Sudah Bayar
+                        </button>
+                    </div>
+
+                    <!-- SeaBank Detail -->
+                    <div id="payment-detail-seabank" class="step-hidden border-t border-gray-100 pt-6 text-center">
+                        <h3 class="font-bold text-navy text-lg mb-4">Transfer SeaBank</h3>
+                        <div class="bg-lightgray p-5 rounded-xl mb-4 text-center">
+                            <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">SeaBank</p>
+                            <p id="seabank-number" class="text-2xl font-extrabold text-navy tracking-wider select-all">901015543315</p>
+                            <p class="text-sm text-gray-600 mt-2">a.n. <span class="font-bold text-navy">Abdurrohman Sudaisi</span></p>
+                        </div>
+                        
+                        <button onclick="copyRekening()" class="w-full bg-electric text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition flex items-center justify-center gap-2 mb-4">
+                            <i class="fas fa-copy"></i> Salin Nomor Rekening
+                        </button>
+                        
+                        <div id="copy-notif" class="hidden text-green-600 text-sm mb-4 font-semibold">Nomor rekening berhasil disalin ✓</div>
+
+                        <div class="text-left bg-lightgray p-4 rounded-xl mb-6 text-xs text-gray-600 space-y-2">
+                            <p>Buka aplikasi SeaBank atau mobile banking kamu, lalu lakukan transfer ke rekening di atas.</p>
+                            <p class="font-semibold text-navy">Pastikan nama penerima sesuai dengan: Abdurrohman Sudaisi</p>
+                        </div>
+
+                        <button onclick="goToStep(4, 'SEABANK')" class="w-full bg-navy text-white py-3 rounded-xl font-bold hover:bg-blue-900 transition">
+                            Saya Sudah Bayar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: Confirmation -->
+            <div id="confirm-step" class="step-hidden">
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-3xl text-orange-500"></i>
+                    </div>
+                    <span class="inline-block bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-bold mb-3">Status: MENUNGGU VERIFIKASI</span>
+                    <h2 class="text-2xl font-bold text-navy mb-2">Terima Kasih!</h2>
+                    <p class="text-gray-500 mb-6 text-sm">Pembayaran kamu akan diverifikasi oleh admin. Setelah pembayaran terkonfirmasi, admin akan menghubungi kamu melalui WhatsApp.</p>
+                    
+                    <div class="bg-lightgray p-4 rounded-xl text-left text-sm space-y-1 mb-6" id="confirm-summary"></div>
+
+                    <p class="text-sm text-gray-600 mb-4">Setelah melakukan pembayaran, kirim bukti pembayaran melalui WhatsApp.</p>
+                    
+                    <a id="wa-confirm-link" href="#" target="_blank" class="w-full bg-[#25D366] text-white py-4 rounded-xl font-bold hover:bg-green-600 transition flex items-center justify-center gap-3 text-lg">
+                        <i class="fab fa-whatsapp text-2xl"></i> Kirim Bukti Pembayaran via WhatsApp
+                    </a>
+                    <button onclick="resetCheckout()" class="w-full text-gray-500 mt-4 text-sm hover:text-electric">Kembali ke Beranda</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between gap-8 mb-8">
+                <div class="max-w-xs">
+                    <div class="flex items-center gap-2 mb-3">
+                        <img src="https://z-cdn-media.chatglm.cn/files/c4ff2520-409a-4c15-aef5-5f2c549a7779.png?auth_key=1890692637-c34048918e8945d7ba8461a0e8c9f89c-0-e9f398c9f763354ccb998cf1b072704f" alt="NextStep Logo" class="h-8 w-8 rounded-full">
+                        <span class="text-lg font-extrabold">Next<span class="text-electric">Step</span></span>
+                    </div>
+                    <p class="text-sm text-gray-400">Your Career Starts Here. Kami bantu persiapan karier terbaikmu dari langkah pertama.</p>
+                </div>
+                <div class="flex flex-col gap-2 text-sm">
+                    <h4 class="font-bold mb-2 text-white">Menu</h4>
+                    <a href="#home" class="text-gray-400 hover:text-electric">Home</a>
+                    <a href="#layanan" class="text-gray-400 hover:text-electric">Layanan</a>
+                    <a href="#cara-kerja" class="text-gray-400 hover:text-electric">Cara Kerja</a>
+                    <a href="#faq" class="text-gray-400 hover:text-electric">FAQ</a>
+                </div>
+                <div class="flex flex-col gap-2 text-sm">
+                    <h4 class="font-bold mb-2 text-white">Kontak Admin</h4>
+                    <a href="https://wa.me/6283834654716" target="_blank" class="text-gray-400 hover:text-electric flex items-center gap-2">
+                        <i class="fab fa-whatsapp"></i> 083834654716
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-center">
+                <p class="text-xs text-gray-500 leading-relaxed max-w-2xl mx-auto">
+                    Disclaimer: NextStep bukan lembaga penyalur kerja dan tidak menjamin penerimaan kerja. Keputusan rekrutmen sepenuhnya berada pada perusahaan.
+                </p>
+                <p class="text-xs text-gray-600 mt-4">&copy; 2024 NextStep. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/6283834654716?text=Halo%20NextStep,%20saya%20ingin%20bertanya%20mengenai%20layanan%20NextStep." target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg z-50 pulse-whatsapp hover:bg-green-600 transition">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Main Website Script -->
+    <script>
+        // Config Admin (Mudah diubah)
+        const ADMIN_CONFIG = {
+            waNumber: '6283834654716',
+            seabankNumber: '901015543315',
+            seabankName: 'Abdurrohman Sudaisi'
+        };
+
+        const PRODUCTS = {
+            'cv1': { name: 'CV Level 1', price: 25000, label: 'CV Level 1' },
+            'cv2': { name: 'CV Level 2', price: 45000, label: 'CV Level 2' },
+            'jh': { name: 'Job Hunter', price: 100000, label: 'Job Hunter' }
+        };
+
+        let currentOrder = {
+            product: null,
+            data: {},
+            paymentMethod: null
+        };
+
+        function formatRupiah(angka) {
+            return 'Rp' + angka.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+        }
+
+        function startOrder(productId) {
+            currentOrder.product = PRODUCTS[productId];
+            document.getElementById('main-view').classList.add('hidden');
+            document.getElementById('checkout-view').classList.remove('hidden');
+            window.scrollTo(0, 0);
+            
+            document.getElementById('product-name-label').innerText = currentOrder.product.label;
+            
+            // Generate Dynamic Fields
+            const dynamicFields = document.getElementById('dynamic-fields');
+            let fieldsHtml = '';
+            
+            if (productId === 'cv1' || productId === 'cv2') {
+                fieldsHtml += `
+                    <div>
+                        <label class="block text-sm font-semibold text-navy mb-1">Pendidikan terakhir <span class="text-red-500">*</span></label>
+                        <input type="text" name="pendidikan" required class="w-full p-3 border border-gray-200 rounded-lg input-focus text-sm" placeholder="Contoh: SMA, SMK, D3, S1">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-navy mb-1">Posisi yang dituju <span class="text-red-500">*</span></label>
+                        <input type="text" name="posisi" required class="w-full p-3 border border-gray-200 rounded-lg input-focus text-sm" placeholder="Contoh: Staff Admin, Marketing">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-navy mb-1">Pengalaman kerja/magang/organisasi <span class="text-gray-400 text-xs font-normal">(Opsional)</span></label>
+                        <textarea name="pengalaman" rows="2" class="w-full p-3 border border-gray-200 rounded-lg input-focus text-sm" placeholder="Jelaskan singkat pengalamanmu jika ada."></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-navy mb-1">Informasi tambahan yang diperlukan untuk pembuatan CV <span class="text-gray-400 text-xs font-normal">(Opsional)</span></label>
+                        <textarea name="info_tambahan" rows="2" class="w-full p-3 border border-gray-200 rounded-lg input-focus text-sm" placeholder="Keahlian, sertifikasi, dll."></textarea>
+                    </div>
+                `;
+            }
+
+            if (productId === 'cv2') {
+                fieldsHtml += `
+                    <div>
+                        <label class="block text-sm font-semibold text-navy mb-1">Nama perusahaan/posisi yang dituju <span class="text-gray-400 text-xs font-normal">(Opsional)</span></label>
+                        <input type="text" name="target_perusahaan" class="w-full p-3 border border-gray-200 rounded-lg input-focus text-sm" placeholder="Contoh: PT Maju Jaya - Management Trainee">
+                    </div>
+                `;
+            }
+
+            if (productId === 'jh') {
+                fieldsHtml += `
+                    <div>
+                        <label class="block text-sm font-semibold text-navy mb-1">Kota/wilayah yang diinginkan <span class="text-red-500">*</span></label>
+                        <input type="text" name="kota" required class="w-full p-3 border border-gray-200 rounded-lg input-focus text-sm" placeholder="Contoh: Jakarta, Bandung, Surabaya">
+                    </div>
+                `;
+            }
+            
+            dynamicFields.innerHTML = fieldsHtml;
+            goToStep(1);
+        }
+
+        function submitForm(e) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value.trim();
+            });
+
+            // Simple Validation WA
+            if(!/^[0-9]{10,15}$/.test(data.wa)) {
+                alert("Nomor WhatsApp tidak valid. Pastikan hanya angka dan minimal 10 digit.");
+                return;
+            }
+
+            currentOrder.data = data;
+            renderReview();
+            goToStep(2);
+        }
+
+        function renderReview() {
+            const data = currentOrder.data;
+            let html = `
+                <div class="flex justify-between gap-4"><span class="text-gray-500">Nama</span><span class="font-semibold text-navy text-right">${data.nama}</span></div>
+                <div class="flex justify-between gap-4"><span class="text-gray-500">WhatsApp</span><span class="font-semibold text-navy text-right">${data.wa}</span></div>
+                <div class="flex justify-between gap-4"><span class="text-gray-500">Alamat</span><span class="font-semibold text-navy text-right">${data.alamat}</span></div>
+                <div class="flex justify-between gap-4"><span class="text-gray-500">Produk</span><span class="font-semibold text-navy text-right">${currentOrder.product.name}</span></div>
+                <div class="flex justify-between gap-4 border-t border-gray-200 mt-2 pt-2"><span class="text-gray-500">Total</span><span class="font-bold text-electric text-right">${formatRupiah(currentOrder.product.price)}</span></div>
+            `;
+            document.getElementById('review-summary').innerHTML = html;
+            document.getElementById('confirm-summary').innerHTML = html;
+        }
+
+        function goToStep(step, method = null) {
+            // Update steps visibility
+            document.getElementById('form-step').classList.add('step-hidden');
+            document.getElementById('review-step').classList.add('step-hidden');
+            document.getElementById('payment-step').classList.add('step-hidden');
+            document.getElementById('confirm-step').classList.add('step-hidden');
+
+            // Reset payment details
+            document.getElementById('payment-detail-qris').classList.add('step-hidden');
+            document.getElementById('payment-detail-seabank').classList.add('step-hidden');
+            document.getElementById('btn-qris').classList.remove('border-electric', 'bg-blue-50');
+            document.getElementById('btn-seabank').classList.remove('border-electric', 'bg-blue-50');
+
+            // Progress bar logic
+            let progress = 0;
+            const step2C = document.getElementById('step-2-circle');
+            const step3C = document.getElementById('step-3-circle');
+            const step4C = document.getElementById('step-4-circle');
+            step2C.className = 'w-8 h-8 bg-gray-300 text-white rounded-full flex items-center justify-center text-xs font-bold';
+            step3C.className = 'w-8 h-8 bg-gray-300 text-white rounded-full flex items-center justify-center text-xs font-bold';
+            step4C.className = 'w-8 h-8 bg-gray-300 text-white rounded-full flex items-center justify-center text-xs font-bold';
+
+            if (step === 1) {
+                document.getElementById('form-step').classList.remove('step-hidden');
+                progress = 25;
+            } else if (step === 2) {
+                document.getElementById('review-step').classList.remove('step-hidden');
+                step2C.className = 'w-8 h-8 bg-electric text-white rounded-full flex items-center justify-center text-xs font-bold';
+                progress = 50;
+            } else if (step === 3) {
+                document.getElementById('payment-step').classList.remove('step-hidden');
+                step2C.className = 'w-8 h-8 bg-electric text-white rounded-full flex items-center justify-center text-xs font-bold';
+                step3C.className = 'w-8 h-8 bg-electric text-white rounded-full flex items-center justify-center text-xs font-bold';
+                progress = 75;
+            } else if (step === 4) {
+                currentOrder.paymentMethod = method; // Save method
+                document.getElementById('confirm-step').classList.remove('step-hidden');
+                step2C.className = 'w-8 h-8 bg-electric text-white rounded-full flex items-center justify-center text-xs font-bold';
+                step3C.className = 'w-8 h-8 bg-electric text-white rounded-full flex items-center justify-center text-xs font-bold';
+                step4C.className = 'w-8 h-8 bg-electric text-white rounded-full flex items-center justify-center text-xs font-bold';
+                progress = 100;
+                setupWhatsAppLink();
+            }
+
+            document.getElementById('progress-bar').style.width = progress + '%';
+            window.scrollTo(0, 0);
+        }
+
+        function selectPayment(method) {
+            if (method === 'qris') {
+                document.getElementById('payment-detail-qris').classList.remove('step-hidden');
+                document.getElementById('btn-qris').classList.add('border-electric', 'bg-blue-50');
+                document.getElementById('btn-seabank').classList.remove('border-electric', 'bg-blue-50');
+                document.getElementById('payment-detail-seabank').classList.add('step-hidden');
+            } else {
+                document.getElementById('payment-detail-seabank').classList.remove('step-hidden');
+                document.getElementById('btn-seabank').classList.add('border-electric', 'bg-blue-50');
+                document.getElementById('btn-qris').classList.remove('border-electric', 'bg-blue-50');
+                document.getElementById('payment-detail-qris').classList.add('step-hidden');
+            }
+        }
+
+        function copyRekening() {
+            const rekening = ADMIN_CONFIG.seabankNumber;
+            navigator.clipboard.writeText(rekening).then(() => {
+                const notif = document.getElementById('copy-notif');
+                notif.classList.remove('hidden');
+                setTimeout(() => {
+                    notif.classList.add('hidden');
+                }, 3000);
+            }).catch(err => {
+                alert('Gagal menyalin. Silakan salin manual: ' + rekening);
+            });
+        }
+
+        function setupWhatsAppLink() {
+            const waNum = ADMIN_CONFIG.waNumber;
+            const msg = `Halo NextStep, saya sudah melakukan pembayaran.%0A%0ANama: ${currentOrder.data.nama}%0ANo. WhatsApp: ${currentOrder.data.wa}%0AProduk: ${currentOrder.product.name}%0ATotal: ${formatRupiah(currentOrder.product.price)}%0AMetode pembayaran: ${currentOrder.paymentMethod}%0A%0ASaya mengirimkan bukti pembayaran untuk pesanan saya.`;
+            const link = `https://wa.me/${waNum}?text=${msg}`;
+            document.getElementById('wa-confirm-link').href = link;
+        }
+
+        function resetCheckout() {
+            document.getElementById('order-form').reset();
+            currentOrder = { product: null, data: {}, paymentMethod: null };
+            document.getElementById('checkout-view').classList.add('hidden');
+            document.getElementById('main-view').classList.remove('hidden');
+            window.scrollTo(0, 0);
+        }
+
+        function toggleFaq(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('i');
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+    </script>
+
+    <!-- Firebase Integration Script (ES Modules) -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDASXj1yxK27ghm32Ghe06aCDa7cW7XP0w",
+          authDomain: "nextstep-2907c.firebaseapp.com",
+          projectId: "nextstep-2907c",
+          storageBucket: "nextstep-2907c.firebasestorage.app",
+          messagingSenderId: "752514372858",
+          appId: "1:752514372858:web:d6d1f19fd30920c7aaa543",
+          measurementId: "G-RCDY2QYY1J"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        
+        // Optional: Log to confirm successful initialization in console
+        console.log("Firebase Analytics initialized successfully.");
+    </script>
+</body>
+</html>
